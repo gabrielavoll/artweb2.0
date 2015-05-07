@@ -1,15 +1,113 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.center  {
+  background-color:#FFFFFF ;
+  width: 76%;
+  height: 1700px; 
+   
+  margin-left:22%;
+  margin-top: 90px; 
+  border: 2px black solid ;
+  
+}
+
+#originals {
+  width: 2600px;
+  height: 500px; 
+
+}
+
+.center ul {
+  list-style-type: none; 
+}
+
+.center li {
+  float: left;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.center p {
+  text-align: center;
+}
+
+ #artphoto {
+  height: 400px; 
+  align: left;
+  margin:10px;
+
+}
+
+.top  {
+  height:100px; 
+  width:100%; 
+  margin-top:-20px;
+  margin-left:-10px;
+  margin-right:-10px;
+  position: fixed;
+  background-color: #FFCC99;  
+
+}
+
+
+.top a {
+  color: #000000;  
+  font-size: 50px;
+  text-decoration:none;
+  
+}
+
+.top p {
+  text-align: center; 
+  margin-top: 20px;
+}
+
+
+.navbar {
+   
+  position: fixed; 
+  height: 550px; 
+  width: 180px;
+  background-color: #000000;
+  margin-top: 80px; 
+  margin-left: -10px; 
+}
+
+.navbar ul {
+ margin-top: 50px;  
+ list-style-type: none; 
+}
+
+.navbar li  {
+  margin-left: auto; 
+  margin-right:auto; 
+  margin-top: 40px;
+  margin-bottom: 60px;
+  list-style-type: none; 
+  color:;#FFCCCC;
+  font-size: 20px;
+   
+}
+
+.navbar a {
+  text-decoration: none;
+  color:#FFCCCC;
+}
+
+
+.navbar a:hover {
+  color: #FFFFFF;
+}
+
+.navbar a:visited {
+  color: #E6B8B8;
+
+}
+
+
+div {
+  font-family: cursive;
+}
