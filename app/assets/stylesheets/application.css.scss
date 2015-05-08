@@ -1,3 +1,15 @@
+
+/*********************/
+/*- New Styling -*/
+/*{{{********************/
+
+
+
+
+
+/*********************/
+/*- OLD Styling -*/
+/*{{{********************/
 .center  {
   background-color:#FFFFFF ;
   width: 76%;
@@ -5,22 +17,21 @@
    
   margin-left:22%;
   margin-top: 90px; 
-  border: 2px black solid ;
-  
+  border: 2px black solid;
+
+  ul { list-style-type: none; }
+  li { float: left; }
+  p { text-align: center; }
+
+  #artphoto {
+  height: 400px; 
+  text-align: left;
+  margin:10px;}
 }
 
 #originals {
   width: 2600px;
   height: 500px; 
-
-}
-
-.center ul {
-  list-style-type: none; 
-}
-
-.center li {
-  float: left;
 }
 
 img {
@@ -28,17 +39,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-}
-
-.center p {
-  text-align: center;
-}
-
- #artphoto {
-  height: 400px; 
-  align: left;
-  margin:10px;
-
 }
 
 .top  {
@@ -50,64 +50,39 @@ img {
   position: fixed;
   background-color: #FFCC99;  
 
-}
-
-
-.top a {
+   a {
   color: #000000;  
   font-size: 50px;
-  text-decoration:none;
-  
-}
-
-.top p {
+  text-decoration:none;}
+  p {
   text-align: center; 
-  margin-top: 20px;
+  margin-top: 20px;}
 }
-
 
 .navbar {
-   
   position: fixed; 
   height: 550px; 
   width: 180px;
   background-color: #000000;
   margin-top: 80px; 
   margin-left: -10px; 
-}
-
-.navbar ul {
- margin-top: 50px;  
- list-style-type: none; 
-}
-
-.navbar li  {
+  ul {
+  margin-top: 50px;  
+  list-style-type: none; }
+  li  {
   margin-left: auto; 
   margin-right:auto; 
   margin-top: 40px;
   margin-bottom: 60px;
   list-style-type: none; 
-  color:;#FFCCCC;
-  font-size: 20px;
-   
-}
-
-.navbar a {
-  text-decoration: none;
   color:#FFCCCC;
+  font-size: 20px; }
+  a {
+  text-decoration: none;
+  color:#FFCCCC; } 
+  a:hover { color: #FFFFFF; }
+  a:visited { color: #E6B8B8; }
 }
 
 
-.navbar a:hover {
-  color: #FFFFFF;
-}
-
-.navbar a:visited {
-  color: #E6B8B8;
-
-}
-
-
-div {
-  font-family: cursive;
-}
+div { font-family: cursive; }
