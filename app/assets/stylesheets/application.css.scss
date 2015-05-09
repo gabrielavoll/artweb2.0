@@ -1,88 +1,62 @@
 
+$primary_orange: #cc9d4b;
+
 /*********************/
 /*- New Styling -*/
 /*{{{********************/
+html, body {
+  width: 100%;
+  background-color: #000;
+}
 
+.top {
+  width: 100%; 
+  min-width: 900px;
+  .logo {
+    display: inline-block;
+    width: 50%; 
+    min-width: 500px; 
+    img { width:100%;}
+  }
+  .navbar {
+      display: inline-block;
+      vertical-align: bottom;
+      float: right;
+      margin: -22px 17px 0px 0px;
+    ul { 
+      margin:55px 0px 0px -5px;
+      padding-left: 0px;
+      list-style-type: none; 
+    }
+    li {
+      padding: 7px;
+      border-radius: 4px;
+      display: inline-block;  
+      list-style-type: none; 
+      a {
+        color:$primary_orange;
+        font-size: 18px;
+        text-decoration: none;
+      }
+      a:hover {color:white;}
+    }
+    li.active {
+      background-color: $primary_orange; 
+      a {color:#000;}
+    }
 
+  }
+}
 
-
-
-/*********************/
-/*- OLD Styling -*/
-/*{{{********************/
 .center  {
-  background-color:#FFFFFF ;
-  width: 76%;
-  height: 1700px; 
-   
-  margin-left:22%;
-  margin-top: 90px; 
-  border: 2px black solid;
-
-  ul { list-style-type: none; }
-  li { float: left; }
-  p { text-align: center; }
-
-  #artphoto {
-  height: 400px; 
-  text-align: left;
-  margin:10px;}
-}
-
-#originals {
-  width: 2600px;
-  height: 500px; 
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-}
-
-.top  {
-  height:100px; 
   width:100%; 
-  margin-top:-20px;
-  margin-left:-10px;
-  margin-right:-10px;
-  position: fixed;
-  background-color: #FFCC99;  
-
-   a {
-  color: #000000;  
-  font-size: 50px;
-  text-decoration:none;}
-  p {
-  text-align: center; 
-  margin-top: 20px;}
-}
-
-.navbar {
-  position: fixed; 
-  height: 550px; 
-  width: 180px;
-  background-color: #000000;
-  margin-top: 80px; 
-  margin-left: -10px; 
-  ul {
-  margin-top: 50px;  
-  list-style-type: none; }
-  li  {
-  margin-left: auto; 
-  margin-right:auto; 
-  margin-top: 40px;
-  margin-bottom: 60px;
-  list-style-type: none; 
-  color:#FFCCCC;
-  font-size: 20px; }
-  a {
-  text-decoration: none;
-  color:#FFCCCC; } 
-  a:hover { color: #FFFFFF; }
-  a:visited { color: #E6B8B8; }
+  margin: -4px 0px 0px -8px;
+  border-top: 10px solid $primary_orange;
+  background-color:#000 ;
+  color:#eee;
 }
 
 
-div { font-family: cursive; }
+table.index {
+   img {width:100px;}
+}

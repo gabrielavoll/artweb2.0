@@ -2,30 +2,26 @@
 <html>
   <head>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'application','data-turbolinks-track' => true %>
   	<%= csrf_meta_tags %>
-		<title style="color: violet">Gabriela Voll's Website</title>
+		<title>Gabby Voll's Website</title>
   </head>
   <body>
-  
-    <div class="top">
-      
-      <a href= "http://gato333.github.io/artweb/"> <p> Welcome to Gabriela's Website </p> </a>
-      
+  	<div class="top">
+	    <div class="logo">
+	      <%= image_tag "logo.jpg" %>
+	    </div>
+	    <div class="navbar">
+	       <ul>
+	       	<li class="<%= current_page(root_path)%>"> <%= link_to "home", root_path %> </li>
+	       	<li class="<%= current_page(root_path)%>"> <%= link_to "original works", root_path %> </li>
+	        <li class="<%= current_page(about_path)%>"> <%= link_to "about", about_path %> </li>
+	        <li class="<%= current_page(resume_path)%>"> <%= link_to "resume", resume_path %></li>
+	        <li class="<%= current_page(contact_path)%>"> <%= link_to "contact", contact_path %></li>
+	       </ul>
+	    </div>
     </div>
-   
-   <hr float="top" margin-top="20%" noshade color= "black" size="2" width="100%">
-    
-    <div class="navbar">
-       <ul>
-        <li> <a href="about.html"> about</a> </li>
-        <li> <a href="resume.html"> resume</a> </li>
-        <li> <a href="originals.html"> original works</a> </li>
-        <li> <a href="http://www.artgato.tumblr.com/"> artblog</a> </li>
-        <li> <a href="contact.html"> contact</a> </li>
-       </ul>
-    </div>
-    
+
     <div class="center">
      <%= yield %>
     </div>
