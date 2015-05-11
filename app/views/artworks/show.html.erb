@@ -1,19 +1,29 @@
+<div class="artwork_show">
 <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Name:</strong>
   <%= @artwork.name %>
-</p>
 
-<p>
   <strong>Date created:</strong>
   <%= @artwork.date_created %>
-</p>
 
-<p>
   <strong>Description:</strong>
   <%= @artwork.description %>
+
+  <strong>Filename:</strong>
+  <%= @artwork.filename %>
+
+   <strong>Category:</strong>
+  <%= @artwork.cat %>
+
+
+  <strong>Image:</strong>
 </p>
+  <%= image_tag @artwork.filename %>
+
+
 
 <%= link_to 'Edit', edit_artwork_path(@artwork) %> |
 <%= link_to 'Back', artworks_path %>
+</div>

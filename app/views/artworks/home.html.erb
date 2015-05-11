@@ -1,0 +1,7 @@
+<!-- This page will show the 4 most recent artworks on a loop --> 
+
+<div class="random_display"> 
+	<% @artworks.each do |artwork| %>
+		<%= image_tag artwork.filename %> 
+	<% end %>
+</div> 

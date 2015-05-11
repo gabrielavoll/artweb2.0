@@ -7,6 +7,10 @@ class ArtworksController < ApplicationController
     @artworks = Artwork.all
   end
 
+  def home 
+    @artworks = Artwork.last(3).reverse
+  end
+
   # GET /artworks/1
   # GET /artworks/1.json
   def show
@@ -69,6 +73,6 @@ class ArtworksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def artwork_params
-      params.require(:artwork).permit(:name, :date_created, :description)
+      params.require(:artwork).permit(:name, :date_created, :description, :filename, :cat)
     end
 end
